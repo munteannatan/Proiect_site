@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+   
+ 
+<html>
+
+<head>
+    
+<title>Planeta Ro&#x0015F;ie</title>
+    
+<link href="imagini/mars_icon-icons.com_60276.ico" rel="shortcut icon" >
+<style>
+
+header{
+	border-radius: 1em 1em 0em 0em;
+	
+	background-image:url("imagini/374852.jpg");
+
+	background-size:100% 100%;
+	
+	width:100%;
+	
+	height:7em;
+}
+h1.c{
+	text-indent: 2em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;}
+p.a{
+	font-size: 1.5em;
+	text-indent: 2em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;
+}
+.right{
+	float:right;
+	position:relative;
+	right:1.2em;}
+.left{
+	float:left;
+	position:relative;
+	left:1.2em;}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div.polar:hover .middle{
+  opacity: 1;
+}
+div.polar:hover .image{
+  opacity: 0.1;
+}
+div.pol:hover .middle{
+  opacity: 1;
+}
+div.pol:hover .image{
+  opacity: 0.1;
+}
+div.pol {
+  width: 20em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+div.polar {
+  width: 15em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+div.polaroid {
+  width: 10.2em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+div.fas{
+	float: left;
+	position:relative;
+}
+
+div.container {
+  text-align: center;
+  padding: 0.1em;
+}
+div.x{
+	margin: 0;
+    padding: 0;
+	border-radius: 1.3em;
+	
+	background-color:white;
+	width:65em;
+	height:300em;
+	margin:auto;
+}
+a.f{font-family:Arial;}
+a.k:hover{
+	opacity:0.7;
+}
+
+a.f:link, a.f:visited{
+	background-color:grey;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	font-size:1.2em;
+	padding:0.5em 1em;
+	height:2.5em;
+	position:relative;
+	top:0.5em;}
+a.f:hover, a.f:active{
+	background-color:black;	
+	height:2.5em;
+}
+body {
+		
+	background-image:url("imagini/30.jpg");
+		
+	background-repeat:no-repeat;
+		
+	background-size:100% 100%;
+	
+	background-attachment:fixed;
+		
+	width:99%;
+			
+	height:100%;
+}
+.image {
+	opacity:1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+img {}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="x"style="height:55em;">
+
+		<header>
+		
+<h1 align=center style="color:white; font-size:6em; vertical-align:middle; font-family:Calibri;font-weight: 400;">PLANETA MARTE</h1>
+
+		</header>
+
+		<nav style="height:2.55em; background-color:grey; border-radius: 0 0 1.1em 1.1em;">
+			<a class="f" href="index.html" style="border-radius: 0 0 0 1em;background-color:black;">PAGINA PRINCIPAL&#x00102</a>
+			<a class="f"href="date_generale.html" style="left:-0.2em;">DATE GENERALE</a>
+			<a class="f"href="cultura.html" style="left:-0.4em;">&#x000CE;N CULTUR&#x00102;</a>
+			<a class="f"href="etc.html" style="left:-0.6em;">PROIECTE SPA&#x00162;IALE</a>
+		</nav>
+		<h1 class="c left"style="width:42em; position:relative; top:1em;">Argument<br></h1>
+		<p class="a left"style="width:24em;">Spa&#x00163;iul cosmic a fascinat mereu omenirea. De mii de ani privim uimi&#x00163;i cerul &#x0015F;i dorim s&#x00103;-i descoperim tainele. Pe m&#x00103;sur&#x00103; ce tehnica a avansat, au fost posibile tot mai multe descoperiri în acest domeniu. Dorin&#x00163;ele omenrii de a explora spa&#x00163;iul s-au concretizat odat&#x00103; cu lansarea primului om în cosmos, respectiv primul pas pe Lun&#x00103;, ajungând în prezent o normalitate existen&#x00163;a unor echipaje pe orbita terestr&#x00103;, iar zborul orbital privat nemaifiind ie&#x0015F;it din comun.</p>
+		<a class="k" href="date_generale.html">
+		<div class="polaroid left"style="width:25em; height:13em;position:relative; left:2.5em; top:-1.5em;">
+			<img src="imagini/1366x768.jpg" alt="Date Generale" style="width:inherit; height:inherit;">
+			
+		</div></a>
+		<p class="a left"style="width:24em; position:relative; top:-1em;">&Icirc;n momentul de fa&#x00163;&#x00103; suntem martorii unui nou pas decisiv în vederea cuceriri spa&#x00163;iului: prima misiune cu echipaj uman pe Marte. Am conceput acest site cu obiectivul pricipal de a oferii o scurt&#x00103; trecere în revist&#x00103; a eforturilor întreprinse de diverse agen&#x00163;ii spa&#x00163;iale p&#x00103;n&#x00103; în prezent, precum &#x0015F;i pentru a oferii câteva date de cultur&#x00103; general&#x00103; despre &#x00163;inta acestor încerc&#x00103;ri: Planeta Ro&#x0015F;ie.</p>
+		<a class="k" href="cultura.html">
+		<div class="polaroid left"style="width:25em; height:13em;position:relative; left:2.5em; top:-5.5em;">
+			<img  src="imagini/640x381.jpg" alt="Culturã" style="width:inherit; height:inherit;">
+			
+		</div></a>
+		<p class="a left"style="width:24em; position:relative; top:-2em;">Sper&#x00103;m c&#x00103; scopul nostru a fost atins &#x0015F;i c&#x00103; rezultatul este unul agreabil. V&#x00103; invit&#x00103;m s&#x00103; explora&#x00163;i sec&#x00163;iunile specifice, &#x0015F;i atept&#x00103;m p&#x00103;rerile dumneavoastr&#x00103;!</p>
+		
+		<a class="k" href="etc.html">
+		<div class="polaroid left"style="width:25em; height:13em;position:relative; left:2.5em; top:-7.5em;">
+			<img  src="imagini/Dk.jpg" alt="Proiecte" style="width:inherit; height:inherit;">
+			
+		</div></a>
+		
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+	</div>
+ </body>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+</html>

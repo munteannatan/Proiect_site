@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+   
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<title>Planeta Ro&#x0015F;ie</title>
+    
+<link href="imagini/mars_icon-icons.com_60276.ico" rel="shortcut icon" >
+<style>
+
+header{
+	border-radius: 1em 1em 0em 0em;
+	
+	background-image:url("imagini/374852.jpg");
+
+	background-size:100% 100%;
+	
+	width:100%;
+	
+	height:7em;
+}
+h1.c{
+	text-indent: 2em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;}
+p.a{
+	font-size: 1.5em;
+	text-indent: 2em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;
+}
+.right{
+	float:right;
+	position:relative;
+	right:1.2em;}
+.left{
+	float:left;
+	position:relative;
+	left:1.2em;}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div.polar:hover .middle{
+  opacity: 1;
+}
+div.polar:hover .image{
+  opacity: 0.1;
+}
+div.pol:hover .middle{
+  opacity: 1;
+}
+div.pol:hover .image{
+  opacity: 0.1;
+}
+div.pol {
+  width: 20em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+div.polar {
+  width: 15em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+div.polaroid {
+  width: 10.2em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+div.fas{
+	float: left;
+	position:relative;
+}
+
+div.container {
+  text-align: center;
+  padding: 0.1em;
+}
+div.x{
+	margin: 0;
+    padding: 0;
+	border-radius: 1.3em;
+	
+	background-color:white;
+	width:65em;
+	height:300em;
+	margin:auto;
+}
+a{font-family:Arial;}
+
+a:link, a:visited{
+	background-color:grey;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	font-size:1.2em;
+	padding:0.5em 1em;
+	height:2.5em;
+	position:relative;
+	top:0.5em;}
+a:hover, a:active{
+	background-color:black;	
+	height:2.5em;
+}
+body {
+		
+	background-image:url("imagini/30.jpg");
+		
+	background-repeat:no-repeat;
+		
+	background-size:100% 100%;
+	
+	background-attachment:fixed;
+		
+	width:99%;
+			
+	height:100%;
+}
+.image {
+	opacity:1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+img {}
+
+#myImg2 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#myImg3 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#myImg1 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 85%;
+    max-width: 50em;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+font-family:Calibri;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="x"style="height:103em;">
+
+		<header>
+		
+		<h1 align=center style="color:white; font-size:6em; vertical-align:middle; font-family:Calibri;font-weight: 400;">PLANETA MARTE</h1>
+
+		</header>
+
+		<nav style="height:2.55em; background-color:grey; border-radius: 0 0 1.1em 1.1em;">
+			<a href="index.html" style="border-radius: 0 0 0 1em;">PAGINA PRINCIPAL&#x00102</a>
+			<a href="date_generale.html" style="left:-0.2em;background-color:black;"">DATE GENERALE</a>
+			<a href="cultura.html" style="left:-0.4em;">&#x000CE;N CULTUR&#x00102;</a>
+			<a href="etc.html" style="left:-0.6em;">PROIECTE SPA&#x00162;IALE</a>
+		</nav>
+		<p class="a left" style="width:40em;">Marte este a patra cea mai apropiată de soare planetă din sistemmul nostru solar și are o culoare predominant roșiatică datorată oxizilor de fier, de aici provenind și denumirea de ”planeta roșie”. În continuare vom prezenta câteva caracteristici ale astrului.</p>
+<p class="a left" style="width:25em;">Planetra Marte este o planetă telurică, având un diameru de două ori mai mic decât cel al Terrei și o masă de zece ori mai mică. Aria totală a planetei este cu puțin mai mica decât cea a uscatului terestru. </p>
+		<div class="polaroid right"style="position:relative; width:24em; height:15em;position:relative;">
+			<img id="myImg" src="imagini/Mars_Earth_Comparison.png" alt="Diferența de dimensiuni între Pămînt și Marte" style=" width:inherit; height:inherit;">
+		</div>
+		<p class="a left" style="width:24em;">Compoziția atmosferei este de 95% dioxid de carbon, 3% azot, 1,6% argon, conținând urme de oxigen și apă. Atmosfera este prăfoasă, oferind cerului marțian o culoare maroniu-roșcată.</p>
+		<p class="a left" style="width:40em;"></p>
+		<div class="polaroid left"style="position:relative; width:24em; height:15em;">
+			<img id="myImg1"src="imagini/Mars_atmosphere.jpg" alt="Atmosfera planetei Marte" style="width:inherit; height:inherit;">
+		</div>
+		<p class="a left" style="width:24em;">Marte are anotimpuri ce se aseamănă celor de pe Pământ. Totuși, ele sunt de două ori mai lungi, iar distanța mai mare față de Soare face ca anul marțian să fie de aproape două ori mai mare ca al planetei noastre. Temperaturile variază între –140 °C și 20 °C.</p>
+		<p class="a left" style="width:40em;"></p>
+		<p class="a left" style="width:25em;">Suprafața planetei, așa cum se poate vedea de pe Pământ, apare sub două tipuri de areale: câmpii plane acoperite cu praf și nisip bogat în oxid de fier roșiatic, considerate “continente”, și locuri mai întunecate, considerate “mări”.</p>
+		<div class="polaroid right"style="position:relative; width:24em; height:15em;">
+			<img id="myImg2"src="imagini/Sol454_Marte_spirit.jpg" alt="Solul planetei Marte" style="width:inherit; height:inherit;">
+		</div>
+		<p class="a left" style="width:40em;">Marte are doi sateliți naturali, Phobos și Deimos, ce orbitează foarte aproape de planetă și se crede că ar fi asteroizi capturați.</p>
+		<p class="a left" style="width:24em;">Marte e mai excentric decât celelalte planete din sistemul solar, iar distanța medie până la Soare este de 230 milioane de kilometri. Perioada de rotație este de 687 de zile pământești, dar o zi pe Marte e doar cu puțin mai mare ca cea de pe Pământ, 24 de ore, 39 de minute și 35 de secunde.</p>
+		<div class="polaroid right"style="position:relative; width:24em; height:15em;">
+			<img id="myImg3" src="imagini/Mars_orbit.jpg" alt="Marte, imagine din orbită" style="width:inherit; height:inherit;">
+		</div>
+		<p class="a left" style="width:40em;">Există dovezi că planeta a fost cândva mult mai accesibilă vieții decât este astăzi, dar dacă au existat vreodată organisme vii pe Marte rămâne încă o întrebare deschisă.</p>
+		<p class="a left" style="width:40em;"></p>
+
+	</div>
+	<div id="myModal" class="modal">
+		<span class="close">X</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+ </body>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var img3 = document.getElementById('myImg3');
+var img2 = document.getElementById('myImg2');
+var img1 = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</html>

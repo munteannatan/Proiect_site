@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+   
+ 
+<html>
+
+<head>
+    
+<title>Planeta Ro&#x0015F;ie</title>
+<meta charset="UTF-8">
+    
+<link href="imagini/mars_icon-icons.com_60276.ico" rel="shortcut icon" >
+<style>
+
+header{
+	border-radius: 1em 1em 0em 0em;
+	
+	background-image:url("imagini/374852.jpg");
+
+	background-size:100% 100%;
+	
+	width:100%;
+	
+	height:7em;
+}
+h1.c{
+	text-indent: 2em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;}
+p.a{
+	font-size: 1.5em;
+	text-indent: 2em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;
+}
+p.ab{
+	font-size: 1.5em;
+	font-family: Calibri;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	text-align: left;
+}
+.right{
+	float:right;
+	position:relative;
+	right:1.2em;}
+.left{
+	float:left;
+	position:relative;
+	left:1.2em;}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div.polar:hover .middle{
+  opacity: 1;
+}
+div.polar:hover .image{
+  opacity: 0.1;
+}
+div.pol:hover .middle{
+  opacity: 1;
+}
+div.pol:hover .image{
+  opacity: 0.1;
+}
+div.pol {
+  width: 20em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+div.polar {
+  width: 15em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+div.polaroid {
+  width: 25em;
+  height:15em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+div.fas{
+	float: left;
+	position:relative;
+}
+
+div.container {
+  text-align: center;
+  padding: 0.1em;
+}
+div.x{
+	margin: 0;
+    padding: 0;
+	border-radius: 1.3em;
+	
+	background-color:white;
+	width:65em;
+	margin:auto;
+}
+a{font-family:Arial;}
+
+a:link, a:visited{
+	background-color:grey;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	font-size:1.2em;
+	padding:0.5em 1em;
+	height:2.5em;
+	position:relative;
+	top:0.5em;}
+a:hover, a:active{
+	background-color:black;	
+	height:2.5em;
+}
+body {
+		
+	background-image:url("imagini/30.jpg");
+		
+	background-repeat:no-repeat;
+		
+	background-size:100% 100%;
+	
+	background-attachment:fixed;
+		
+	width:99%;
+			
+	height:100%;
+}
+.image {
+	opacity:1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+img {}
+#myImg2 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#myImg1 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 85%;
+    max-width: 50em;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+font-family:Calibri;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="x" style="height:120em;">
+
+		<header>
+		
+<h1 align=center style="color:white; font-size:6em; vertical-align:middle; font-family:Calibri;font-weight: 400;">PLANETA MARTE</h1>
+
+		</header>
+
+		<nav style="height:2.55em; background-color:grey; border-radius: 0 0 1.1em 1.1em;">
+			<a href="index.html" style="border-radius: 0 0 0 1em;">PAGINA PRINCIPAL&#x00102</a>
+			<a href="date_generale.html" style="left:-0.2em;">DATE GENERALE</a>
+			<a href="cultura.html" style="left:-0.4em;">&#x000CE;N CULTUR&#x00102;</a>
+			<a href="etc.html" style="left:-0.6em;background-color:black;">PROIECTE SPA&#x00162;IALE</a>
+		</nav>
+		<p class="a left">Planeta Marte a atras privirile mai multor organiza&#x00163;ii, printre care se num&#x00103;r&#x00103; NASA, SpaceX &#x0015F;i Mars One, acestea propun&#x000E2;ndu-&#x0015F;i proiecte ambi&#x00163;ioase de colonizare a astrului.</p>
+		<h1 class="c left" style="width:40em">NASA<br></h1>
+		<p class="a left" style="width:24em;">NASA, Administra&#x00163;ia Na&#x00163;ional&#x00103; a Spa&#x00163;iului &#x0015F;i Aeronautici, &#x000EE;&#x0015F;i propune o abordare treptat&#x00103; c&#x00103;tre scopul ultim de a pune piciorul pe Marte. Aceasta de&#x00163;ine deja date variate cu privire la modul de via&#x00163;&#x00103; al astronau&#x00163;ilor &#x0015F;i problemele pe care o c&#x00103;l&#x00103;torie &#x000EE;ndelungat&#x00103; &#x000EE;n lipsa gravit&#x00103;&#x00163;ii le ridic&#x00103; din experien&#x00163;a dob&#x000E2;ndit&#x00103; &#x000EE;n deceniile de zboruri spa&#x00163;iale &#x000EE;ntreprinse. O misiune cu scopul ajungerii pe planet&#x00103; ar presupune o c&#x00103;l&#x00103;torie &#x000EE;ndelungat&#x00103;, &#x000EE;ntre &#x0015F;ase &#x0015F;i nou&#x00103; luni doar pentru drumul dus, folosind tehnologia de propulsie actual&#x00103;.</p>
+		<div  class="polaroid left" style="position:relative; left:2.5em; top:2em;">
+			<img id="myImg" src="imagini/68994241-01122015.jpeg" alt="Călătoria spre marte propusă de NASA" style="width:inherit; height:inherit;" >
+		</div>
+		<p class="a left"style="width:40em;">&Icirc;n urm&#x00103;torii 10 ani, NASA pl&#x00103;nuie&#x0015F;te diverse zboruri de &#x000EE;ncercare a echipamentelor &#x0015F;i de acomodare a astronau&#x00163;ilor, precum &#x0015F;i pentru ob&#x00163;inerea mai multor date despre zboruri interplanetare. Spre exemplu este pl&#x00103;nuit un zbor spre o orbit&#x00103; lunar&#x00103; cu scopul vizit&#x00103;rii unei st&#x000E2;nci asteroid &#x000EE;n anii 2020. Dac&#x00103; misiunile vor fi &#x000EE;ncununate de succes, urm&#x00103;toarea faz&#x00103; presupune c&#x00103;l&#x00103;toria &#x000EE;ns&#x00103;&#x0015F;i. Planurile actuale prev&#x00103;d orbitarea planetei la &#x000EE;nceputul anilor 2030 cu diferite expedi&#x00163;ii spre suprafa&#x00163;&#x00103;. Oficialii NASA au declarat c&#x00103; sper&#x00103; s&#x00103; &#x000EE;nfiin&#x00163;eze un avampost la suprafa&#x00163;a planetei &#x000EE;n scopul cercet&#x00103;rii &#x0015F;tiin&#x00163;ifice.</p>
+		<h1 class="c left"style="width:40em;">SpaceX<br></h1>
+		<p class="a left"style="width:24em;">SpaceX, compania privat&#x00103; de aeronautic&#x00103; al c&#x00103;rei fondator &#x0015F;i director executiv este miliardarul Elon Musk, a anun&#x00163;at c&#x00103; dore&#x0015F;te s&#x00103; &#x000EE;nfiin&#x00163;eze o colonie mar&#x00163;ian&#x00103; care s&#x00103; g&#x00103;zduiasc&#x00103; aproximativ un milion de persoane &#x000EE;n urm&#x00103;torii 50, 100 de ani. Pentru &#x000EE;ndeplinirea acestei sarcini, SpaceX pl&#x00103;nuie&#x0015F;te construirea unnui Sistem de Transport Interplanetar (ITS), care presupune proiectarea unei nave spa&#x00163;iale de o sut&#x00103; de locuri propulsat&#x00103; de cea mai puternic&#x00103;</p>
+		<div class="polaroid left"style="width:25em; height:13em;position:relative; left:2.5em; top:2em;">
+			<img id="myImg1" src="imagini/T2hMoT8.jpg" alt="Ilustra&#x00163;ie artistic&#x00103; a ITS ajung&acirc;nd pe Marte." style="width:inherit; height:inherit;">
+			</div>
+		<p class="ab left"style="width:42em; position:relative; top:-2em;">rachet&#x00103; din istorie, capabile s&#x00103; duc&#x00103; &#x0015F;i s&#x00103; aduc&#x00103; coloni&#x0015F;ti pe Marte. Dac&#x00103; totul merge cum trebuie, o ITS refolosibil&#x00103; ar trebui s&#x00103; fie func&#x00163;ional&#x00103; &#x0015F;i gata de lansare p&#x000E2;n&#x00103; &#x000EE;n 2024. &#x000EE;ntre timp, SpaceX va efectua mai multe zboruri de testare &#x000EE;ncep&#x000E2;nd cu 2018, f&#x00103;r&#x00103; echipaj uman.</p>
+		<h1 class="c left"style="width:42em;">Mars One<br></h1>
+		<p class="a left"style="width:24em;">Mars One este o alt&#x00103; agen&#x00163;ie care are acest &#x00163;el, aceasta av&#x000E2;nd bazele &#x000EE;n Olanda, &#x000EE;ns&#x00103; la o scar&#x00103; mult mai mic&#x00103;. Pentru &#x000EE;nceput, ace&#x0015F;tia &#x000EE;&#x0015F;i propun s&#x00103; lanseze misiuni robotice &#x000EE;n 2020, 2022 &#x0015F;i 2024 pentru a pune bazele  &#x000EE;n vederea sosirii primilor coloni&#x0015F;ti care vor fi lansa&#x00163;i &#x000EE;n 2026 &#x0015F;i vor ajunge pe Marte &#x000EE;n 2027. Dac&#x00103; totul va decurge f&#x00103;r&#x00103; probleme, Mars One va ontinua s&#x00103; trimit&#x00103; echipaje a c&#x000E2;te patru persoane la fiecare ocazie &#x000EE;n care Marte &#x0015F;i P&#x00103;m&#x000E2;ntul</p>
+		<div class="polaroid left"style="width:25em; height:13em;position:relative; left:2.5em; top:2em;">
+			<img id="myImg2" src="imagini/1-YoGg5k4FRF08FK_88x1eAA.jpeg" alt="Proiect al bazei planetare mar&#x00163;irne." style="width:inherit; height:inherit;">
+			</div>
+		<p class="ab left"style="width:42em; position:relative; top:-2em;">se aliniaz&#x00103;, pentru a construi treptat o comunitate permanent&#x00103;. La monentul de fa&#x00163;&#x00103; c&#x00103;l&#x00103;toria va fi una doar dus, re&#x000EE;ntoarcerea nef&#x00103;c&#x000E2;nd parte din proiect. Fiind o organiza&#x00163;ie non-profit, fondurile necesare proiectului vor str&#x000E2;nse prin evenimente media globale care vor prezenta concursul pentru alegerea echipajului, lansarea precum &#x0015F;i modul de via&#x00163;&#x00103; al coloni&#x0015F;tilor.</p>
+	</div>
+	<div id="myModal" class="modal">
+  <span class="close">X</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+ </body>
+ <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var img2 = document.getElementById('myImg2');
+var img1 = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+</html>
